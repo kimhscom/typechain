@@ -12,6 +12,10 @@
   },
   "author": "Hyunsu Kim",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  },
   "bugs": {
     "url": "https://github.com/kimhscom/typechain/issues"
   },
