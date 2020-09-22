@@ -37,11 +37,11 @@ class Block {
   }
 }
 
-const genesisBlock: Block = new Block(0, "asdf12345", "", "Hello", 12345);
+const genesisBlock: Block = new Block(0, "asdf12345", "", "first block", 12345);
 
 let blockchain: Block[] = [genesisBlock];
 
-const getBlockchanin = (): Block[] => blockchain;
+const getBlockchain = (): Block[] => blockchain;
 
 const getLatestBlock = (): Block => blockchain[blockchain.length - 1];
 
@@ -97,5 +97,11 @@ const addBlock = (candidateBlock: Block): void => {
     blockchain.push(candidateBlock);
   }
 };
+
+createBlock("second block");
+createBlock("third block");
+createBlock("fourth block");
+
+console.log(blockchain);
 
 export {};
